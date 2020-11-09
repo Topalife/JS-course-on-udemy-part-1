@@ -106,7 +106,7 @@ console.log(agePavel, ageMaryna);
 */
 
 //Coding challenge
-
+/*
 //Mark and John are trying to compare their BMI (Body Mass Index), which is calculated using the formula:
 //BMI = mass / height ** 2 = mass / (height * height) (mass in kg and height in meter).
 //Your tasks:
@@ -131,5 +131,101 @@ const BMIJohn = massJohn / (heightJohn * heightJohn);
 
 const markHigherBMI = BMIMark > BMIJohn;
 console.log(BMIMark > BMIJohn);
+console.log(BMIMark, BMIJohn, markHigherBMI);
+*/
+
+//Strings
+/*
+const firstName = 'Pavel';
+const job = 'courier';
+const birthYear = 1991;
+const year = 2037;
+const pavel = "I'm" + firstName + ', a' + (year - birthYear) + 'years old' + job + '!';
+console.log(pavel);
+
+//Template strings
+const pavelNew = `I'm ${firstName}, a ${year - birthYear} year old ${job}!`;
+console.log(pavelNew);
+
+const greeting = "Hello, ";
+const myName = "Pavel!";
+console.log(greeting + myName);
+
+*/
+
+//else statements
+/*
+const age = 18;
+const isOldEnough = age >= 18;
+if (isOldEnough) {
+    console.log('Maryna can start driving license 🚗');
+}
+*/
+
+/*
+const age = 15;
+const isOldEnough = age >= 18;
+if (age >= 18) {
+    console.log('Maryna can start driving license 🚗');
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Maryna is too young.Wait another ${yearsLeft} years`);
+}
+*/
+
+/*
+const birthYear = 1998;
+
+if (birthYear <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
+*/
+
+//Challenge #2
+
+//Use the BMI example from Challenge #1, and the code you already wrote, and improve it.
+//Your tasks:
+//1. Print a nice output to the console, saying who has the higher BMI. The message 
+//is either "Mark's BMI is higher than John's!" or "John's BMI is higher than Mark's!"
+//2. Use a template literal to include the BMI values in the outputs. Example: "Mark's
+//BMI (28.3) is higher than John's (23.9)!"
+//Hint: Use an if/else statement
+
+//#1
+//const massMark = 95;
+//const heightMark = 1.69;
+//const massJohn = 85;
+//const heightJohn = 1.88;
+
+//const BMIMark = massMark / heightMark ** 2;
+//const BMIJohn = massJohn / (heightJohn * heightJohn);
+//const markHigherBMI = BMIMark > BMIJohn;
+
+//if (BMIMark > BMIJohn) {
+//    console.log("Mark's BMI is higher then John's!");
+//} else {
+//    console.log("John's BMI is higher then Mark's!");
+//}
 
 
+/*#2
+
+const massMark = 78;
+const heightMark = 1.69;
+const massJohn = 92;
+const heightJohn = 1.88;
+
+const BMIMark = massMark / heightMark ** 2;
+const BMIJohn = massJohn / (heightJohn * heightJohn);
+const markHigherBMI = BMIMark > BMIJohn;
+
+
+if (BMIMark > BMIJohn) {
+    console.log(`Mark's BMI (${BMIMark}) is higher then John's! (${BMIJohn})`);
+} else {
+    console.log(`John's BMI (${BMIJohn})is higher then Mark's!(${BMIMark})`);
+}
+*/
